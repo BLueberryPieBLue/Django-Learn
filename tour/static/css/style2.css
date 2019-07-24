@@ -1,0 +1,195 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: black;
+
+}
+ul,li{
+	list-style: none;
+}
+
+.head{
+	width: 100%;
+	min-width:800px ;
+	background: rgba(50,50,50,0.7);
+	height: 50px;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.header{
+	width: 800px;
+	margin: 0 auto;
+	height: 50px;
+}
+.header .usericon{
+	width: 35px;
+	height: 35px;
+	border: 1px solid orange;
+	border-radius:5px ;
+	float: left;
+	margin: 6px;
+}
+
+.header .user{
+	font-size: 14px;
+	float: left;
+	line-height: 50px;
+	color: white;
+}
+
+.header .musicicon{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin: 5px;
+	margin-left: 20px;
+}
+
+.header .times{
+	float: right;
+	font-size: 14px;
+	color: white;
+	line-height: 50px;
+}
+
+.header .musicicon{
+	/*参数一：绑定在keyframes上的名称【必须写】
+	 参数二：动画执行的时间【必须写】
+	 参数三：动画开始之前的延迟【默认为0】
+	 参数四：动画的运动曲线【默认ease】
+	 参数五：动画执行的次数【默认1次】infinite【无限大，循环执行】
+	 参数六：动画是否轮流反向执行【默认normal】*/
+	animation: xuanzhuan 2s infinite;
+
+}
+
+@keyframes xuanzhuan{
+	from{transform: rotate(0);}
+	to{transform: rotate(360deg);}
+}
+
+.banner{
+	margin-top: 50px;
+	width: 100%;
+	min-width: 800px;
+	height: 400px;
+	background: url(/static/img/4.jpg) no-repeat center center;
+	background-size:cover ;
+}
+.content{
+	width: 100%;
+	min-width: 800px;
+
+}
+
+.content .form-box{
+	width: 800px;
+	margin: 50px auto;
+	overflow: hidden;
+	/*background: #008000;*/
+}
+.form-box #sendtxt{
+	width: 100%;
+	height: 120px;
+}
+.form-box .filebox{
+	float: left;
+	width:346px ;
+	height: 46px;
+	background: #fff;
+	position: relative;
+	text-align: center;
+	line-height: 50px;
+	border: 2px dotted gray;
+}
+
+.filebox input{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+
+
+.form-box input[type=button]{
+	float: left;
+	width: 100px;
+	height: 50px;
+	background: gray;
+}
+
+.itembox{
+	width: 800px;
+	margin: 50px auto;
+}
+
+.itembox li{
+	width: 100%;
+	height: 350px;
+	background: #FFFFFF;
+	margin-bottom:20px ;
+}
+
+.itembox li .item-img{
+	height: 100%;
+	width:500px ;
+	float: left;
+
+}
+
+.item-right{
+	float: left;
+	width: 260px;
+	height: 310px;
+	padding: 20px;
+}
+
+.item-right .delete{
+	float: right;
+	color: darkred;
+}
+
+.item-right .itemtxt{
+	margin-top: 40px;
+	height: 170px;
+	overflow: auto;
+}
+.item-right .userbox {
+	height: 40px;
+	margin: 20px 0px;
+}
+
+.icon-img{
+	width: 30px;
+	height: 30px;
+	border-radius:50% ;
+	margin: 5px;
+	float: left;
+}
+
+.userbox .username{
+	float: left;
+	line-height: 40px;
+	font-size: 14px;
+}
+.userbox .sendtime{
+	float: right;
+	line-height: 40px;
+	font-size: 14px;
+}
+
+
+.item-right .musicname{
+	color: brown;
+
+}
+.delete, .musicname{
+	text-decoration: none;
+}
